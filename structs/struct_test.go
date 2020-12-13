@@ -40,7 +40,7 @@ func TestWallet(t *testing.T) {
 		wallet.Deposit(10.0)
 		err := wallet.Withdraw(15.0)
 
-		if err == nil {
+		if err != ErrorInsufficientFunds {
 			t.Errorf("Test failed, test case should receive an Insufficient funds error")
 		}
 
