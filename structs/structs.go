@@ -2,7 +2,7 @@ package structs
 
 import "errors"
 
-var (
+const (
 	ErrorInsufficientFunds = errors.New("Insufficient funds")
 )
 
