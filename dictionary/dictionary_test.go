@@ -1,13 +1,11 @@
 package mydict
 
 import (
-	"fmt"
 	"testing"
 )
 
 func TestDict(t *testing.T) {
 	t.Run("find existent key", func(t *testing.T) {
-		fmt.Println(Jack())
 		dictionary := Dictionary{"key": "value"}
 
 		result, err := dictionary.Find("key")
